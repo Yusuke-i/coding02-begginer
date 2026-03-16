@@ -40,9 +40,9 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header js-hamburger">
     <div class="header__inner">
-      <h1 class="header__name"><img class="header__logo" src="/images/logo.svg" alt="ヘッダーロゴ"/></h1>
+      <h1 class="header__name"><img class="header__logo" src="/images/mv-logo.svg" alt="ヘッダーロゴ"/></h1>
       <nav class="header__nav md-none">
         <ul class="header__items">
           <li class="header__item">
@@ -63,11 +63,65 @@
         </ul>
       </nav>
 
+      <div class="hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="drawer-menu js-drawer-menu">
+        <div class="drawer-menu__inner">
+          <ul class="drawer-menu__items">
+            <li class="drawer-menu__item">
+              <a href="#vision" class="drawer-menu__link">Vision</a>
+            </li>
+            <li class="drawer-menu__item">
+              <a href="#service" class="drawer-menu__link">Service</a>
+            </li>
+            <li class="drawer-menu__item">
+              <a href="#news" class="drawer-menu__link">News</a>
+            </li>
+          </ul>
+          <a href="#contact" class="drawer-menu__contact contact__button"></a>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
-
+    <!-- メインビュー -->
+     <div class="mv">
+      <div class="mv__inner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+                <source srcset="/images/mv-img1.jpg" media="(min-width: 1024px)"/>
+                <img src="/images/mv-img1-sp.jpg" alt="外でタブレットとスマホを持った笑顔の女性">
+            </picture>
+          </div>
+          <div class="mv__title-wrap">
+            <img src="/images/mv-logo.svg" alt="メインビューロゴ" class="mv__logo">
+          </div>
+          <p class="mv__title">
+            <span class="mv__title-large">挑</span>戦する。<br class="md-show">
+            <span class="mv_title-strong">自</span>分をこえる。
+          </p>
+          <div class="swiper-slide">
+            <picture>
+                <source srcset="/images/mv-img2.jpg" media="(min-width: 1024px)"/>
+                <img src="/images/mv-img2-sp.jpg" alt="スマホを持った女性とタブレットを持った男性が空を見上げている様子">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+                <source srcset="/images/mv-img3.jpg" media="(min-width: 1024px)"/>
+                <img src="/images/mv-img3-sp.jpg" alt="外でタブレットとスマホを持った笑顔の女性">
+            </picture>
+          </div>
+        </div>
+      </div>
+     </div>
+     <!-- About -->
   </main>
 
   <footer class="footer"></footer>
