@@ -253,6 +253,25 @@ select::-ms-expand {
   height: inherit;
 }
 
+.news {
+  width: 100%;
+  padding: 100px auto 160px;
+}
+@media screen and (max-width: 768px) {
+  .news {
+    padding-bottom: 100px;
+  }
+}
+
+.news-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.news-card {
+  width: 33.3%;
+}
+
 * {
   outline: 1px solid red;
 }
@@ -280,6 +299,7 @@ inner {
 .section__title--sub {
   font-size: 12px;
   margin-top: 3px;
+  color: #F14E53;
 }
 @media screen and (max-width: 768px) {
   .section__title--sub {
